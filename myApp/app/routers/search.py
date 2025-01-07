@@ -2,7 +2,7 @@
 from fastapi import APIRouter, Query, HTTPException
 from fastapi.responses import JSONResponse
 import psycopg2
-from utils.db import get_connection
+from utils import db
 
 router = APIRouter()
 

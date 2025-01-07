@@ -2,7 +2,8 @@
 import psycopg2
 from psycopg2.extensions import connection
 from psycopg2 import sql
-from app.core.config import settings
+from core.config import settings
+# from app.core.config import settings
 
 print(settings.POSTGRES_HOST)
 

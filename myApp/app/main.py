@@ -18,9 +18,9 @@ UPLOADS_DIR.mkdir(parents=True, exist_ok=True)
 app.mount("/files", StaticFiles(directory=UPLOADS_DIR), name="files")
 
 # Initialize the DB (creates table, index if needed)
-@app.on_event("startup")
-def on_startup():
-    init_db()
+#@app.on_event("startup")
+#def on_startup():
+#    init_db()
 
 @app.get("/", response_class=HTMLResponse)
 def home():
